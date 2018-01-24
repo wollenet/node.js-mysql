@@ -11,7 +11,7 @@ var connection = mysql.createconnection({
 });
 
 
-function validateInput(value) {
+function Input(value) {
 	var integer = Number.isInteger(parseFloat(value));
 	var sign = Math.sign(value);
 
@@ -23,13 +23,13 @@ function validateInput(value) {
 };
 
 
-function promptForUser() {
+function userPrompt() {
 	inquirer.prompt([
 	{
 		type: 'input',
 		name: 'item_id',
 		message: 'Enter ID number of item picked.',
-		validate: validateInput
+		validate: Input
 		filter: Number
 	},
 
@@ -37,7 +37,7 @@ function promptForUser() {
 		type: 'input',
 		name: 'quantity',
 		message: 'How many of this item would you like to purchase?',
-		validate: validateInput,
+		validate: Input,
 		filter: Number
 	}
 	]).then(function(input) {
