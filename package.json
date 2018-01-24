@@ -1,0 +1,11 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "amazon": "0.0.0",
+    "ansi-escapes": "^3.0.0",
+    "inquire": "^0.4.8",
+    "mysql": "^2.15.0",
+    "require": "^2.4.20"
+  }
+}
