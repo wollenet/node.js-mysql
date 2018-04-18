@@ -1,11 +1,17 @@
 {
-  "name": "",
-  "version": "",
+  "name": "Bamazon-Supervisor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "amazon": "0.0.0",
-    "ansi-escapes": "^3.0.0",
-    "inquire": "^0.4.8",
-    "mysql": "^2.15.0",
-    "require": "^2.4.20"
+    "console.table": "^0.8.0",
+    "inquirer": "^2.0.0",
+    "mysql": "^2.15.0"
   }
 }
